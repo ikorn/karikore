@@ -7,20 +7,25 @@
 
 import SwiftUI
 
+class MembersData: ObservableObject {
+    var tabIndex: Int = 0
+}
+
 struct MembersView: View {
-    @State private var selection: Int = 0
+    
+    @EnvironmentObject var data: MembersData
     
     var body: some View {
-        TabView(selection: $selection) {
+        TabView(selection: $data.tabIndex) {
             HomeView()
-                .tabItem { TabItemView(title: "Home", imageName: "home") }
-            Text("Search")
-                .tabItem { TabItemView(title: "Search", imageName: "search") }
-            Text("Account")
-                .tabItem{ TabItemView(title: "Account", imageName: "account") }
+                .tabItem { TabItemView(title: "Home", image: Image(systemName: "house")) }
+            SearchView()
+                .tabItem { TabItemView(title: "Search", image: Image(systemName: "magnifyingglass")) }
+            AccountView()
+                .tabItem{ TabItemView(title: "Account", image: Image(systemName: "person.fill")) }
             SettingsView()
                 .environmentObject(SettingsStore())
-                .tabItem{ TabItemView(title: "Setting", imageName: "settings") }
+                .tabItem{ TabItemView(title: "Setting", image: Image(systemName: "gearshape.fill")) }
         }
         .accentColor(.active)
         .navigationBarBackButtonHidden(true)
@@ -29,16 +34,12 @@ struct MembersView: View {
 
 struct TabItemView: View {
     
-    private var title: String = ""
-    private var imageName: String = ""
-    
-    init(title: String, imageName: String) {
-        self.title = title
-        self.imageName = imageName
-    }
+    var title: String
+    var image: Image
+
     
     var body: some View {
-        Image(self.imageName)
+        self.image
         Text(self.title)
     }
 }

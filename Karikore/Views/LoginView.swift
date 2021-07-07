@@ -25,10 +25,11 @@ struct LoginView: View {
 
 struct LoginForm: View {
     
+    @AppStorage("isAuthenticated") var isAuthenticated: Bool = false
+    
     @State private var email: String = ""
     @State private var password: String = ""
     
-    @State private var isSuccess: Bool = false
     @State private var error: String = ""
     
     var body: some View {
@@ -41,14 +42,10 @@ struct LoginForm: View {
                 SecureField("パスワード", text: $password)
                     .defaultField(content: .password, keyboard: .asciiCapable)
                 
-                NavigationLink(destination: MembersView(), isActive: $isSuccess) {
-                    Text("ログイン")
-                        .mainButton()
-                        .padding(.vertical, paddingMedium)
+                Button("ログイン") {
+                    login()
                 }
-                .simultaneousGesture(TapGesture().onEnded({
-                    self.login()
-                }))
+                .mainButton()
                 .alert(isPresented: .constant(!self.error.isEmpty)) {
                     Alert(
                         title: Text("エラー"),
@@ -82,8 +79,7 @@ struct LoginForm: View {
             return
         }
         self.error = ""
-        self.isSuccess = true
-        NSLog("isSuccess \(isSuccess)")
+        isAuthenticated = true
     }
 }
 

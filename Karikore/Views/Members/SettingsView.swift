@@ -8,8 +8,8 @@
 import SwiftUI
 
 enum AuthenticationMethod: String, CaseIterable {
-    case biometric
-    case login
+    case biometric = "生体認証"
+    case login = "アップリパスワード"
 }
 
 class SettingsStore: ObservableObject {
@@ -22,25 +22,40 @@ struct SettingsView: View {
     @EnvironmentObject var settings: SettingsStore
     
     var body: some View {
-        Form {
-            Section(header: Text("アプリの設定")) {
-                Picker(
-                    selection: $settings.authenticationMethod,
-                    label: Text("認証方法")) {
-                    ForEach(AuthenticationMethod.allCases, id: \.self) {
-                        Text($0.rawValue).tag($0)
+        NavigationView {
+            Form {
+                Section(header: Text("アプリの設定")) {
+                    Picker(
+                        selection: $settings.authenticationMethod,
+                        label: Text("認証方法")) {
+                        ForEach(AuthenticationMethod.allCases, id: \.self) {
+                            Text($0.rawValue).tag($0)
+                        }
+                    }
+                    Toggle(isOn: $settings.notification) {
+                        Text("通知:")
                     }
                 }
-                Toggle(isOn: $settings.notification) {
-                    Text("通知:")
+                Section(header: Text("アプリ情報")) {
+                    HStack {
+                        Text("アプリバージョン")
+                        Spacer()
+                        Text("1.0")
+                    }
+                    NavigationLink("利用規約", destination: EmptyView())
+                    NavigationLink("個人情報", destination: EmptyView())
+                    NavigationLink("よくある質問", destination: EmptyView())
+                    NavigationLink("ヘルプ", destination: EmptyView())
+                }
+                Section {
+                    Button("ログアウト") {
+                        UserDefaults.standard.removeObject(forKey: "isAuthenticated")
+                    }
                 }
             }
-            Section(header: Text("アプリの設定")) {
-                
-            }
+            .navigationTitle(Text("設定"))
+            .navigationBarTitleDisplayMode(.large)
         }
-        .navigationTitle("設定")
-        .navigationBarTitleDisplayMode(.large)
     }
 }
 

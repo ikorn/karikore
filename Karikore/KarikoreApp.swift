@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct KarikoreApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            MainView()
         }
     }
 }
