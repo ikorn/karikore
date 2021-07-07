@@ -1,1 +1,3 @@
 # karikore
+
+Sample SwiftUI app
