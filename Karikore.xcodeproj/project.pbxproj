@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2907B0CA26914DA900FC6A98 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907B0C726914DA900FC6A98 /* Colors.swift */; };
+		2907B0CC26914DA900FC6A98 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907B0C926914DA900FC6A98 /* Extensions.swift */; };
+		2907B0CE26915A3500FC6A98 /* FormStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907B0CD26915A3500FC6A98 /* FormStyles.swift */; };
+		2907B0D026915C4700FC6A98 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907B0CF26915C4700FC6A98 /* Constants.swift */; };
+		2907B0D226915D8800FC6A98 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907B0D126915D8800FC6A98 /* ForgotPasswordView.swift */; };
+		2936505726919781006DCFFF /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2936505626919781006DCFFF /* SignupView.swift */; };
+		2936505A269198E5006DCFFF /* MembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29365059269198E5006DCFFF /* MembersView.swift */; };
+		2956D5BA26951C4D00D76CA4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956D5B926951C4D00D76CA4 /* HomeView.swift */; };
+		2956D5BC2695238E00D76CA4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956D5BB2695238E00D76CA4 /* SettingsView.swift */; };
+		298C904026913FD60032C1AD /* KarikoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298C903F26913FD60032C1AD /* KarikoreApp.swift */; };
+		298C904226913FD60032C1AD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298C904126913FD60032C1AD /* LoginView.swift */; };
+		298C904426913FD70032C1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298C904326913FD70032C1AD /* Assets.xcassets */; };
+		298C904726913FD70032C1AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298C904626913FD70032C1AD /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2907B0C726914DA900FC6A98 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2907B0C926914DA900FC6A98 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2907B0CD26915A3500FC6A98 /* FormStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormStyles.swift; sourceTree = "<group>"; };
+		2907B0CF26915C4700FC6A98 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2907B0D126915D8800FC6A98 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		2910F4352691C02E008E3BFB /* Karikore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Karikore.entitlements; sourceTree = "<group>"; };
+		2936505626919781006DCFFF /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		29365059269198E5006DCFFF /* MembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersView.swift; sourceTree = "<group>"; };
+		2956D5B926951C4D00D76CA4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2956D5BB2695238E00D76CA4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		298C903C26913FD60032C1AD /* Karikore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karikore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		298C903F26913FD60032C1AD /* KarikoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarikoreApp.swift; sourceTree = "<group>"; };
+		298C904126913FD60032C1AD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		298C904326913FD70032C1AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		298C904626913FD70032C1AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		298C904826913FD70032C1AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		298C903926913FD60032C1AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2907B0C626914D8E00FC6A98 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2907B0C726914DA900FC6A98 /* Colors.swift */,
+				2907B0C926914DA900FC6A98 /* Extensions.swift */,
+				2907B0CD26915A3500FC6A98 /* FormStyles.swift */,
+				2907B0CF26915C4700FC6A98 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		29365058269198D9006DCFFF /* Members */ = {
+			isa = PBXGroup;
+			children = (
+				29365059269198E5006DCFFF /* MembersView.swift */,
+				2956D5B926951C4D00D76CA4 /* HomeView.swift */,
+				2956D5BB2695238E00D76CA4 /* SettingsView.swift */,
+			);
+			path = Members;
+			sourceTree = "<group>";
+		};
+		298C903326913FD60032C1AD = {
+			isa = PBXGroup;
+			children = (
+				298C903E26913FD60032C1AD /* Karikore */,
+				298C903D26913FD60032C1AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		298C903D26913FD60032C1AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				298C903C26913FD60032C1AD /* Karikore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		298C903E26913FD60032C1AD /* Karikore */ = {
+			isa = PBXGroup;
+			children = (
+				2910F4352691C02E008E3BFB /* Karikore.entitlements */,
+				2907B0C626914D8E00FC6A98 /* Common */,
+				298C904E2691404D0032C1AD /* Views */,
+				298C903F26913FD60032C1AD /* KarikoreApp.swift */,
+				298C904326913FD70032C1AD /* Assets.xcassets */,
+				298C904826913FD70032C1AD /* Info.plist */,
+				298C904526913FD70032C1AD /* Preview Content */,
+			);
+			path = Karikore;
+			sourceTree = "<group>";
+		};
+		298C904526913FD70032C1AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				298C904626913FD70032C1AD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		298C904E2691404D0032C1AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29365058269198D9006DCFFF /* Members */,
+				298C904126913FD60032C1AD /* LoginView.swift */,
+				2907B0D126915D8800FC6A98 /* ForgotPasswordView.swift */,
+				2936505626919781006DCFFF /* SignupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		298C903B26913FD60032C1AD /* Karikore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 298C904B26913FD70032C1AD /* Build configuration list for PBXNativeTarget "Karikore" */;
+			buildPhases = (
+				298C903826913FD60032C1AD /* Sources */,
+				298C903926913FD60032C1AD /* Frameworks */,
+				298C903A26913FD60032C1AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Karikore;
+			productName = Karikore;
+			productReference = 298C903C26913FD60032C1AD /* Karikore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		298C903426913FD60032C1AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					298C903B26913FD60032C1AD = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 298C903726913FD60032C1AD /* Build configuration list for PBXProject "Karikore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 298C903326913FD60032C1AD;
+			productRefGroup = 298C903D26913FD60032C1AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				298C903B26913FD60032C1AD /* Karikore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		298C903A26913FD60032C1AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298C904726913FD70032C1AD /* Preview Assets.xcassets in Resources */,
+				298C904426913FD70032C1AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		298C903826913FD60032C1AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2936505A269198E5006DCFFF /* MembersView.swift in Sources */,
+				2907B0CE26915A3500FC6A98 /* FormStyles.swift in Sources */,
+				2907B0D226915D8800FC6A98 /* ForgotPasswordView.swift in Sources */,
+				2956D5BA26951C4D00D76CA4 /* HomeView.swift in Sources */,
+				2907B0CC26914DA900FC6A98 /* Extensions.swift in Sources */,
+				298C904226913FD60032C1AD /* LoginView.swift in Sources */,
+				2936505726919781006DCFFF /* SignupView.swift in Sources */,
+				2907B0CA26914DA900FC6A98 /* Colors.swift in Sources */,
+				298C904026913FD60032C1AD /* KarikoreApp.swift in Sources */,
+				2907B0D026915C4700FC6A98 /* Constants.swift in Sources */,
+				2956D5BC2695238E00D76CA4 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		298C904926913FD70032C1AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		298C904A26913FD70032C1AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		298C904C26913FD70032C1AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Karikore/Karikore.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Karikore/Preview Content\"";
+				DEVELOPMENT_TEAM = XZRD7AETC5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Karikore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karikore.Karikore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		298C904D26913FD70032C1AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Karikore/Karikore.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Karikore/Preview Content\"";
+				DEVELOPMENT_TEAM = XZRD7AETC5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Karikore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.karikore.Karikore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		298C903726913FD60032C1AD /* Build configuration list for PBXProject "Karikore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				298C904926913FD70032C1AD /* Debug */,
+				298C904A26913FD70032C1AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		298C904B26913FD70032C1AD /* Build configuration list for PBXNativeTarget "Karikore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				298C904C26913FD70032C1AD /* Debug */,
+				298C904D26913FD70032C1AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 298C903426913FD60032C1AD /* Project object */;
+}
