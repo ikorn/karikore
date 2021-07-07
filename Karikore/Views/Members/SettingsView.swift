@@ -42,10 +42,10 @@ struct SettingsView: View {
                         Spacer()
                         Text("1.0")
                     }
-                    NavigationLink("利用規約", destination: EmptyView())
-                    NavigationLink("個人情報", destination: EmptyView())
-                    NavigationLink("よくある質問", destination: EmptyView())
-                    NavigationLink("ヘルプ", destination: EmptyView())
+                    NavigationLink("利用規約", destination: SafariView(url: "https://www.google.com"))
+                    NavigationLink("個人情報", destination: SafariView(url: "https://www.google.com"))
+                    NavigationLink("よくある質問", destination: SafariView(url: "https://www.google.com"))
+                    NavigationLink("ヘルプ", destination: SafariView(url: "https://www.google.com"))
                 }
                 Section {
                     Button("ログアウト") {

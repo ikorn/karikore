@@ -51,10 +51,16 @@ extension Button {
 
 extension Text {
     
+    func title() -> some View {
+        self.font(.headline.bold())
+            .foregroundColor(.title)
+            .lineSpacing(paddingSmall)
+    }
+    
     func body() -> some View {
         self.font(.body)
             .foregroundColor(.body)
-            .lineSpacing(8)
+            .lineSpacing(paddingSmall)
     }
     
     func link(color: Color) -> some View {
