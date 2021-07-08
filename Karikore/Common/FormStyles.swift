@@ -63,6 +63,12 @@ extension Text {
             .lineSpacing(paddingSmall)
     }
     
+    func caption() -> some View {
+        self.font(.caption)
+            .foregroundColor(.body)
+            .lineSpacing(paddingSmall)
+    }
+    
     func link(color: Color) -> some View {
         self.font(.caption.bold())
             .foregroundColor(color)

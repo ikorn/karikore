@@ -26,5 +26,5 @@ extension Color {
 
 extension LinearGradient {
     
-    static let mintWhite = LinearGradient(colors: [Color.mint, Color.white], startPoint: .top, endPoint: .bottom)
+    static let mintWhite = LinearGradient(colors: [Color.white, Color.mintLight], startPoint: .top, endPoint: .bottom)
 }

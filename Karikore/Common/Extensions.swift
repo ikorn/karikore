@@ -13,3 +13,10 @@ extension NSObject {
         return String(describing: self)
     }
 }
+
+extension String {
+    
+    func toURL() -> URL? {
+        return URL(string: self)
+    }
+}

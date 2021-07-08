@@ -17,7 +17,7 @@ struct MembersView: View {
     
     var body: some View {
         TabView(selection: $data.tabIndex) {
-            HomeView()
+            HomeView(viewModel: HomeViewModel())
                 .tabItem { TabItemView(title: "Home", image: Image(systemName: "house")) }
             SearchView()
                 .tabItem { TabItemView(title: "Search", image: Image(systemName: "magnifyingglass")) }

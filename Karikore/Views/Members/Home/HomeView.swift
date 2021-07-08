@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @ObservedObject var viewModel: HomeViewModel
+    
     @State private var index = 0
     
     var body: some View {
@@ -25,9 +27,13 @@ struct HomeView: View {
                     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                     .frame(height: 144)
 
-                    HomeGridItem(title: "新着")
-                    HomeGridItem(title: "人気")
-                    HomeGridItem(title: "お気に入り")
+                    HomeGridItem(title: "新着", items: self.viewModel.newlyAdded)
+                    HomeGridItem(title: "人気", items: self.viewModel.newlyAdded)
+                    HomeGridItem(title: "お気に入り", items: self.viewModel.newlyAdded)
+                }
+                .background(LinearGradient.mintWhite)
+                .onAppear {
+                    viewModel.fetch()
                 }
             }
             .navigationTitle("カリコレ")
@@ -39,6 +45,7 @@ struct HomeView: View {
 struct HomeGridItem: View {
     
     var title: String
+    var items: [ProductData]
     
     var body: some View {
         VStack {
@@ -52,13 +59,8 @@ struct HomeGridItem: View {
                     .foregroundColor(Color.link)
             }
             LazyVGrid(columns: Array(repeating: GridItem(), count: 2)) { // カラム数の指定
-                ForEach((1...4), id: \.self) { index in
-                    ZStack {
-                        RoundedRectangle(cornerRadius: paddingMedium)
-                            .fill(Color.mintLight)
-                        Text("\(index)")
-                    }
-                    .frame(maxWidth: .infinity, minHeight:96)
+                ForEach(self.items, id: \.self.id) { product in
+                    HomeItemView(product: product)
                 }
             }
         }
@@ -68,6 +70,6 @@ struct HomeGridItem: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(viewModel: HomeViewModel())
     }
 }
